@@ -3,6 +3,10 @@ image:
   pullPolicy: IfNotPresent
   tag: "2022-latest"
 
+# Controls whether the chart creates secrets automatically
+# Set to false to manage secrets externally
+createSecrets: true
+
 MSSQL_PID: "Developer"
 MSSQL_AGENT_ENABLED: "false"
 

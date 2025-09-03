@@ -185,8 +185,9 @@ dockerHub:
 
 mssql: 
   enabled: false
+  createSecrets: true
   ACCEPT_EULA: "Y"
-  SA_PASSWORD: ""
+  SA_PASSWORD: ""  # Will be ignored when createSecrets is false
 
 global:
   # Set the default storageClass to be used for all persistent volume claims
